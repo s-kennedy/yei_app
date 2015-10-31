@@ -239,10 +239,13 @@
 
   $(function(){
 
-    $('.grid').imagesLoaded( function() {
-      $('.grid'). masonry({
-        itemSelector: '.grid-item'
-      });
+    $('.grid').masonry({
+      itemSelector: '.grid-item',
+      // columnWidth: 300
+    });
+
+    $grid.imagesLoaded().progress( function() {
+      $grid.masonry('layout');
     });
 
     $("li#target").on("click", function() {
