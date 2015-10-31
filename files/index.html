@@ -6,6 +6,7 @@
   <title>Youth Employment Inventory</title>
   <script type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script type="text/javascript" src="/masonry/dist/masonry.pkgd.min.js"></script>
   <script type="text/javascript" src="/hopscotch/dist/js/hopscotch.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
@@ -250,7 +251,7 @@
       $grid.masonry('layout');
     });
 
-
+    $grid.imagesLoaded
 
     $("li#target").on("click", function() {
       var $items = $("div.grid-item:not(.driver)")
