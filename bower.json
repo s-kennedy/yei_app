@@ -1,0 +1,21 @@
+{
+  "name": "yei_app",
+  "authors": [
+    "Sharon <sharon.peishan.kennedy@gmail.com>"
+  ],
+  "description": "mockup for new yei website",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

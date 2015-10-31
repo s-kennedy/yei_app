@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Youth Employment Inventory</title>
+  <script type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/masonry/dist/masonry.pkgd.min.js"></script>
+  <script type="text/javascript" src="/hopscotch/dist/js/hopscotch.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/hopscotch/dist/css/hopscotch.min.css">
+  <link rel="stylesheet" type="text/css" href="/index.css">
+</head>
+<body>
+  
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="/ILO_logo_white.png" alt="ILO" height="30px">
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Browse the interventions</a></li>
+          <li><a href="/filter">Explore the data</a></li>
+          <li><a href="/new">Add your project</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Log in</a></li>
+          <li class="register"><a href="#">Register</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Youth<br>Employment<br>Inventory</h1>
+      <p><span>A database of youth employment interventions from around the world</span></p>
+    </div>
+  </div>
+  <nav class="nav-filter">
+    <ul class="list-inline nav nav-pills text-center">
+      <span>Filter by:</span>
+      <li id="country"><a>Country</a></li>
+      <li id="services"><a>Services</a></li>
+      <li id="target"><a>Target</a></li>
+      <li><a href="#">More...</a></li>
+    </ul>
+  </nav>
+
+  <div class="grid">
+    <div class="col-sm-4 col-md-3 grid-item driver">
+      <div class="thumbnail">
+        <img src="/driver.jpg" alt="Driver">
+        <div class="caption">
+          <h3><a href="show.html">Driving all day</a></h3>
+          <p>This girl just loves to drive</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3 grid-item electrician">
+      <div class="thumbnail">
+        <img src="/electrician.jpg" alt="Electrician">
+        <div class="caption">
+          <h3><a href="#">Electrician doing cool stuff</a></h3>
+          <p>What a swell job this guy has</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3 grid-item farmer">
+      <div class="thumbnail">
+        <img src="/farmer.jpg" alt="Farmer">
+        <div class="caption">
+          <h3><a href="#">Feeding everyone</a></h3>
+          <p>Everyone wants to work in agriculture, right??</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3 grid-item itguy">
+      <div class="thumbnail">
+        <img src="/it.jpg" alt="IT">
+        <div class="caption">
+          <h3><a href="#">Working with computers</a></h3>
+          <p>What do you think they're looking at?</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3 grid-item driver">
+      <div class="thumbnail">
+        <img src="/driver.jpg" alt="Driver">
+        <div class="caption">
+          <h3><a href="show.html">Driving all day</a></h3>
+          <p>This girl just loves to drive</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3 grid-item electrician">
+      <div class="thumbnail">
+        <img src="/electrician.jpg" alt="Electrician">
+        <div class="caption">
+          <h3><a href="#">Electrician doing cool stuff</a></h3>
+          <p>What a swell job this guy has</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3 grid-item farmer">
+      <div class="thumbnail">
+        <img src="/farmer.jpg" alt="Farmer">
+        <div class="caption">
+          <h3><a href="#">Feeding everyone</a></h3>
+          <p>Everyone wants to work in agriculture, right??</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3 grid-item itguy">
+      <div class="thumbnail">
+        <img src="/it.jpg" alt="IT">
+        <div class="caption">
+          <h3><a href="#">Working with computers</a></h3>
+          <p>What do you think they're looking at?</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3 grid-item driver">
+      <div class="thumbnail">
+        <img src="/driver.jpg" alt="Driver">
+        <div class="caption">
+          <h3><a href="show.html">Driving all day</a></h3>
+          <p>This girl just loves to drive</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3 grid-item electrician">
+      <div class="thumbnail">
+        <img src="/electrician.jpg" alt="Electrician">
+        <div class="caption">
+          <h3><a href="#">Electrician doing cool stuff</a></h3>
+          <p>What a swell job this guy has</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3 grid-item farmer">
+      <div class="thumbnail">
+        <img src="/farmer.jpg" alt="Farmer">
+        <div class="caption">
+          <h3><a href="#">Feeding everyone</a></h3>
+          <p>Everyone wants to work in agriculture, right??</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 col-md-3 grid-item itguy">
+      <div class="thumbnail">
+        <img src="/it.jpg" alt="IT">
+        <div class="caption">
+          <h3><a href="#">Working with computers</a></h3>
+          <p>What do you think they're looking at?</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="col-md-6">
+      <p class="text-muted">About YEI</p>
+        <small class="text-muted">The Youth Employment Inventory is the first comprehensive database to provide comparative information on youth employment interventions worldwide. Comprising more than 400 youth employment programs from around 90 countries, YEI documents program design, implementation, and achieved results.</small>
+      </div>
+      <div class="col-md-6">
+        <p class="text-muted">The YEI Consortium</p>
+        <ul class="list-unstyled">
+          <li><a href="http://www.ilo.org/global/lang--en/index.htm">International Labout Organization</a></li>
+          <li><a href="http://www.worldbank.org/">World Bank</a></li>
+          <li><a href="http://www.bmz.de/en/">German Federal Ministry for Economic Cooperation and Development</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script type="text/javascript">
+  var tour = {
+      id: "index-tour",
+      steps: [
+        {
+          title: "Navigation",
+          content: "Clear and simple main navigation, with only links to key actions",
+          target: ".navbar",
+          placement: "bottom"
+        },
+        {
+          title: "Browse interventions",
+          content: "Users can immediately start browsing interventions. These should be dropdowns, or checklists, with more options for filtering. Click on 'Country'!",
+          target: document.querySelector("li#country"),
+          placement: "bottom"
+        },
+        {
+          title: "Footer",
+          content: "Since users don't always land on the home page, there is a short description here of what the YEI is. We can also put a more comprehensive list of links here.",
+          target: document.querySelector(".footer"),
+          placement: "top"
+        },
+        {
+          title: "Interventions",
+          content: "Title, image, and a short description for each intervention. The home page could just show the most recent interventions, with the option to load more. Click on the title to see the full intervention page.",
+          target: document.querySelector("div.driver > div.thumbnail > div.caption > h3 > a"),
+          placement: "right",
+          yOffset: -10
+        }
+      ]
+    };
+
+    hopscotch.startTour(tour);
+</script>
+
+<script>
+
+  $(function(){
+
+    $('.grid').masonry({
+      itemSelector: '.grid-item',
+      // columnWidth: 300
+    });
+
+    $("li#target").on("click", function() {
+      var $items = $("div.grid-item:not(.driver)")
+      $('.grid').masonry("remove", $items).masonry('layout')
+    })
+
+    $("li#services").on("click", function() {
+      var $items = $("div.grid-item:not(.driver, .itguy)")
+      $('.grid').masonry("remove", $items).masonry('layout')
+    })
+
+    $("li#country").on("click", function() {
+      var $items = $("div.grid-item:not(.electrician, .itguy, .driver)")
+      $('.grid').masonry("remove", $items).masonry('layout')
+    })
+  })
+
+  
+</script>
+</html>

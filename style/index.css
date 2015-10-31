@@ -1,0 +1,162 @@
+body {
+  font-weight: 200;
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', 'Helvetica', sans-serif;
+  color: #0C3259; }
+
+a {
+  color: #61A037; }
+
+a:hover {
+  color: #7DCC47; }
+
+div.main {
+  margin-bottom: 40px; }
+
+.jumbotron {
+  background-image: url("/chef.jpg");
+  background-size: cover;
+  height: 500px;
+  border-bottom: 5px solid #0C3259; }
+  .jumbotron h1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: 'Oswald', 'Helvetica', sans-serif;
+    margin-bottom: 20px; }
+  .jumbotron span {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    padding: 5px;
+    line-height: 2; }
+
+.nav-filter {
+  background-color: #fff;
+  width: 100%;
+  height: 60px; }
+  .nav-filter li, .nav-filter span {
+    font-size: 16px;
+    padding: 0 10px; }
+  .nav-filter li:hover, .nav-filter span:hover {
+    font-weight: 400; }
+  .nav-filter span {
+    float: left;
+    padding: 10px 15px; }
+
+.nav-pills {
+  width: 520px;
+  margin: auto; }
+
+.grid img {
+  width: 300px;
+  height: auto; }
+
+.thumbnail {
+  border-radius: 0; }
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #0C3259;
+  border-radius: 0;
+  border: 2px solid #0C3259;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+.navbar-default .navbar-nav > li > a, .navbar-default .nav-filter .navbar-nav > span > a, .nav-filter .navbar-default .navbar-nav > span > a {
+  color: #fff; }
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .nav-filter .navbar-nav > span > a:hover, .nav-filter .navbar-default .navbar-nav > span > a:hover {
+  color: #fff;
+  font-weight: 400; }
+
+.navbar-default .navbar-nav > li > a:visited, .navbar-default .nav-filter .navbar-nav > span > a:visited, .nav-filter .navbar-default .navbar-nav > span > a:visited {
+  color: #fff; }
+
+.navbar-default .navbar-nav > li, .navbar-default .nav-filter .navbar-nav > span, .nav-filter .navbar-default .navbar-nav > span {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-bottom: 5px solid #0C3259; }
+
+.navbar-default .navbar-nav > li:hover, .navbar-default .nav-filter .navbar-nav > span:hover, .nav-filter .navbar-default .navbar-nav > span:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 5px solid #61A037; }
+
+li.register, .nav-filter span.register {
+  background-color: #61A037;
+  font-weight: 400;
+  border-bottom: 5px solid #61A037 !important; }
+
+.navbar-default .navbar-nav > li.register:hover, .navbar-default .nav-filter .navbar-nav > span.register:hover, .nav-filter .navbar-default .navbar-nav > span.register:hover {
+  background-color: #7DCC47; }
+
+div.standout {
+  border: 5px solid #0C3259;
+  margin-bottom: 30px; }
+  div.standout div.col-md-6 {
+    padding: 0; }
+    div.standout div.col-md-6 div.standout-content {
+      padding: 20px;
+      margin: 10px;
+      font-size: 16px;
+      height: 100%; }
+      div.standout div.col-md-6 div.standout-content span {
+        font-weight: 400; }
+
+.header {
+  padding: 60px 0 20px 0; }
+
+.sub-header {
+  padding: 40px 0 10px 0; }
+
+div.project-images div.images {
+  border: 5px solid #0C3259;
+  padding: 20px; }
+  div.project-images div.images img {
+    max-width: 400px;
+    margin: 0 auto;
+    display: block; }
+
+div.filters {
+  margin: 10px 0 30px 0; }
+
+footer {
+  min-height: 60px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 40px; }
+  footer div.container {
+    margin: 0 20px; }
+    footer div.container div p {
+      font-weight: 500;
+      font-size: 14px; }
+    footer div.container div a {
+      font-size: 14px; }
+
+div.results div {
+  padding: 10px; }
+  div.results div img {
+    max-width: 260px; }
+
+.hidden {
+  display: none; }
+
+form div.basic-info .col-md-12, form div.basic-info .col-md-6, form div.basic-info .col-md-3 {
+  margin-top: 20px; }
+form div.form-section {
+  background-color: #0C3259;
+  margin: 5px 0; }
+  form div.form-section h3 {
+    color: #fff;
+    margin-bottom: 20px; }
+form div.more-info {
+  padding: 20px 0; }
+
+button.save {
+  width: 300px;
+  margin: 30px auto;
+  display: block; }
+
+/*# sourceMappingURL=index.css.map */

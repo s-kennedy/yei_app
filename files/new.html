@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Youth Employment Inventory</title>
+  <script type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/masonry/dist/masonry.pkgd.min.js"></script>
+  <script type="text/javascript" src="/hopscotch/dist/js/hopscotch.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/hopscotch/dist/css/hopscotch.min.css">
+  <link rel="stylesheet" type="text/css" href="/index.css">
+</head>
+<body>
+  
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="/ILO_logo_white.png" alt="ILO" height="30px">
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Browse the interventions</a></li>
+          <li><a href="/filter">Explore the data</a></li>
+          <li><a href="/new">Add your project</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Log in</a></li>
+          <li class="register"><a href="#">Register</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="row main">
+    <div class="container">
+
+      <div class="header col-md-12">
+        <h1>Add an intervention</h1>    
+      </div>
+
+      <div class="new-entry">
+
+        <form>
+          <div class="basic-info">
+
+            <div class="col-md-12">
+              <label for="title">Name of intervention</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="title">
+                <span class="input-group-addon">?</span>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <label for="summary">Short Summary</label>
+              <div class="input-group">
+                <textarea class="form-control" id="summary"></textarea>
+                <span class="input-group-addon">?</span>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <label for="description">Description of the intervention process</label>
+              <div class="input-group">
+                <textarea class="form-control" id="description"></textarea>
+                <span class="input-group-addon">?</span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="contact">Contact person</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="contact">
+                <span class="input-group-addon">?</span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="email">Email address</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="email">
+                <span class="input-group-addon">?</span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+
+            <label for="filters">Characteristics</label>
+              <ul class="list-inline" id="filters">
+                <li>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Country
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">Afghanistan</a></li>
+                      <li><a href="#">Albania</a></li>
+                      <li><a href="#">Algeria</a></li>
+                      <li><a href="#">Angola</a></li>
+                      <li><a href="#">Etc...</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Main Category
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">Skills training</a></li>
+                      <li><a href="#">Entrepreneurship promotion</a></li>
+                      <li><a href="#">Employment services</a></li>
+                      <li><a href="#">Subsidized employment</a></li>
+                      <li><a href="#">Reforms of labour market regulations and legislation</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Second Category
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">Skills training</a></li>
+                      <li><a href="#">Entrepreneurship promotion</a></li>
+                      <li><a href="#">Employment services</a></li>
+                      <li><a href="#">Subsidized employment</a></li>
+                      <li><a href="#">Reforms of labour market regulations and legislation</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Status
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">Completed</a></li>
+                      <li><a href="#">Ongoing</a></li>
+                      <li><a href="#">Unknown</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li><button class="btn btn-default" style="background-color: #eee;">?</button></li>
+              </ul>
+            </div>
+
+            <div class="col-md-3">
+              <label for="start">Start date:</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="start">
+                <span class="input-group-addon">?</span>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="end">End date</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="end">
+                <span class="input-group-addon">?</span>
+              </div>
+            </div>
+
+          </div>
+
+            <div class="col-md-12 beneficiaries form-section" style="margin-top: 60px;">
+              <h3>Information on beneficiaries <span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="font-size:16px; padding-left: 10px"></span></h3>
+            </div>
+
+            <div class="beneficiaries toggle" style="display: none;">
+              <div class="row"> 
+              <div class="beneficiaries expand col-md-12" style="padding: 20px 0;"> 
+              
+                <div class="col-md-12">
+                  <label for="title">Name of intervention</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="title">
+                    <span class="input-group-addon">?</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="summary">Short Summary</label>
+                  <div class="input-group">
+                    <textarea class="form-control" id="summary"></textarea>
+                    <span class="input-group-addon">?</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="description">Description of the intervention process</label>
+                  <div class="input-group">
+                    <textarea class="form-control" id="description"></textarea>
+                    <span class="input-group-addon">?</span>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+
+                <label for="filters">Characteristics</label>
+                  <ul class="list-inline" id="filters">
+                    <li>
+                      <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          Country
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                          <li><a href="#">Afghanistan</a></li>
+                          <li><a href="#">Albania</a></li>
+                          <li><a href="#">Algeria</a></li>
+                          <li><a href="#">Angola</a></li>
+                          <li><a href="#">Etc...</a></li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          Main Category
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                          <li><a href="#">Skills training</a></li>
+                          <li><a href="#">Entrepreneurship promotion</a></li>
+                          <li><a href="#">Employment services</a></li>
+                          <li><a href="#">Subsidized employment</a></li>
+                          <li><a href="#">Reforms of labour market regulations and legislation</a></li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          Second Category
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                          <li><a href="#">Skills training</a></li>
+                          <li><a href="#">Entrepreneurship promotion</a></li>
+                          <li><a href="#">Employment services</a></li>
+                          <li><a href="#">Subsidized employment</a></li>
+                          <li><a href="#">Reforms of labour market regulations and legislation</a></li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          Status
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                          <li><a href="#">Completed</a></li>
+                          <li><a href="#">Ongoing</a></li>
+                          <li><a href="#">Unknown</a></li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li><button class="btn btn-default" style="background-color: #eee;">?</button></li>
+                  </ul>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="title">Start date:</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="title">
+                    <span class="input-group-addon">?</span>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <label for="title">End date</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="title">
+                    <span class="input-group-addon">?</span>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 form-section">
+              <h3>Implementing Agency <span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="font-size:16px; padding-left: 10px"></span></h3>
+            </div>
+
+            <div class="col-md-12 form-section">
+              <h3>Funding agency <span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="font-size:16px; padding-left: 10px"></span></h3>
+            </div>
+
+            <div class="col-md-12 form-section">
+              <h3>Evaluations and Studies <span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="font-size:16px; padding-left: 10px"></span></h3>
+            </div>
+
+            <div class="col-md-12 form-section">
+              <h3>Costs <span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="font-size:16px; padding-left: 10px"></span></h3>
+            </div>
+
+        </form>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="container col-md-12">
+        <button class="btn btn-lg btn-success save">Save intervention</button>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="col-md-6">
+      <p class="text-muted">About YEI</p>
+        <small class="text-muted">The Youth Employment Inventory is the first comprehensive database to provide comparative information on youth employment interventions worldwide. Comprising more than 400 youth employment programs from around 90 countries, YEI documents program design, implementation, and achieved results.</small>
+      </div>
+      <div class="col-md-6">
+        <p class="text-muted">The YEI Consortium</p>
+        <ul class="list-unstyled">
+          <li><a href="http://www.ilo.org/global/lang--en/index.htm">International Labout Organization</a></li>
+          <li><a href="http://www.worldbank.org/">World Bank</a></li>
+          <li><a href="http://www.bmz.de/en/">German Federal Ministry for Economic Cooperation and Development</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script type="text/javascript">
+  var tour = {
+      id: "new-tour",
+      steps: [
+        {
+          title: "Simplified form",
+          content: "The form to add a new intervention should be broken up into sections which can be filled in independently. The basic infomration is required, and then additional components can be added, depending on the nature of the intervention and the information available.",
+          target: document.querySelector("div.header > h1"),
+          placement: "bottom"
+        },
+        {
+          title: "Form components",
+          content: "Each component opens up to display a new section of the form. (Click to open it)",
+          target: document.querySelector("div.beneficiaries.form-section"),
+          placement: "bottom"
+        },
+        {
+          title: "Save",
+          content: "The user can save the form as they go, and we could add a progress bar to show them how far they've gotten.",
+          target: document.querySelector("button.save"),
+          placement: "top"
+        },
+        {
+          title: "End of tour",
+          content: "That's it for the tour! Remember that this is an early mockup, and does not include all of the planned features. Please see the user stories for more information.",
+          target: document.querySelector(".navbar"),
+          placement: "bottom"
+        }
+      ]
+    };
+
+    hopscotch.startTour(tour);
+</script>
+
+<script type="text/javascript">
+
+  $(function(){
+    
+    $("div.beneficiaries.form-section").on("click", function(){
+      $("div.beneficiaries.toggle").slideToggle(600);
+    })
+
+  })
+</script>
+</html>

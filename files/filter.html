@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Youth Employment Inventory</title>
+  <script type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/masonry/dist/masonry.pkgd.min.js"></script>
+  <script type="text/javascript" src="/hopscotch/dist/js/hopscotch.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/hopscotch/dist/css/hopscotch.min.css">
+  <link rel="stylesheet" type="text/css" href="/index.css">
+</head>
+<body>
+  
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="/ILO_logo_white.png" alt="ILO" height="30px">
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Browse the interventions</a></li>
+          <li><a href="/filter">Explore the data</a></li>
+          <li><a href="/new">Add your project</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Log in</a></li>
+          <li class="register"><a href="#">Register</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="row main">
+    <div class="container">
+
+      <div class="header col-md-12">
+        <h1>Explore the Data</h1>    
+      </div>
+
+      <div class="search">
+        <form>
+          <div class="input-group input-group-lg">
+            <input type="text" class="form-control search-input" placeholder="Search..." aria-describedby="search-icon">
+            <span class="input-group-addon btn-success" id="search-icon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
+          </div>
+        </form>
+      </div>
+
+        <div class="sub-header col-md-12">
+          <h3>Filter by:</h3>    
+        </div>
+
+        <div class="filters">
+          <ul class="list-inline">
+
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Category
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Skills training</a></li>
+                  <li><a href="#">Entrepreneurship promotion</a></li>
+                  <li><a href="#">Employment services</a></li>
+                  <li><a href="#">Subsidized employment</a></li>
+                  <li><a href="#">Reforms of labour market regulations and legislation</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Country
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Afghanistan</a></li>
+                  <li><a href="#">Albania</a></li>
+                  <li><a href="#">Algeria</a></li>
+                  <li><a href="#">Angola</a></li>
+                  <li><a href="#">Etc...</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Status
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Completed</a></li>
+                  <li><a href="#">Ongoing</a></li>
+                  <li><a href="#">Unknown</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Special considerations
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Gender</a></li>
+                  <li><a href="#">Disability</a></li>
+                  <li><a href="#">Ethnic groups</a></li>
+                  <li><a href="#">Income</a></li>
+                  <li><a href="#">Level of education</a></li>
+                  <li><a href="#">At-risk</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Implementing agency
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Government agency</a></li>
+                  <li><a href="#">Non-governmental organisation</a></li>
+                  <li><a href="#">Multilateral organisation</a></li>
+                  <li><a href="#">Donor agency</a></li>
+                  <li><a href="#">Private sector</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Type of evaluation
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Basic desciptive information</a></li>
+                  <li><a href="#">Process evaluation</a></li>
+                  <li><a href="#">Impact evaluation</a></li>
+                  <li><a href="#">Impact evaluation plus cost-benefit analysis</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Quality of the intervention
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Intervention had negative impact in the labor market</a></li>
+                  <li><a href="#">Intervention had zero impact in the labor market</a></li>
+                  <li><a href="#">Intervention had positive impact in the labor market</a></li>
+                  <li><a href="#">There is not enough evidence to make an assessment</a></li>
+                </ul>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="results row hidden">
+
+          <div class="standout col-md-12">
+            <div class="location col-md-3">
+              <h4>Locations</h4>
+              <img src="/locations.png">
+            </div>
+
+            <div class="ages col-md-3">
+              <h4>Ages of beneficiaries</h4>
+              <img src="/ages.png">
+            </div>
+
+            <div class="gender col-md-3">
+              <h4>Quality of intervention</h4>
+              <img src="/quality.png" style="max-height: 200px; width: auto;" >
+            </div>
+
+            <div class="more-options col-md-3">
+              <h4>Display:</h4>
+              <ul class="list-unstyled">
+                <li><p><input type="checkbox" aria-label="..."> Source of funds</p></li>
+                <li><p><input type="checkbox" aria-label="..."> Costs</p></li>
+                <li><p><input type="checkbox" aria-label="..."> Scope and type of intervention</p></li>
+                <li><p><input type="checkbox" aria-label="..."> Labour market barriers addressed</p></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-12 list-results">
+            <h3>Results (42)</h3>    
+            <ul class="list-unstyled">
+              <li><a href="show.html">Khadijah Programme</a></li>
+              <li><a href="show.html">Mahinda Chinthanaya</a></li>
+              <li><a href="show.html">The Company Programme</a></li>
+              <li><a href="show.html">Somos Capaces (We Can)</a></li>
+              <li><a href="show.html">Building and Extending Skills Training (BEST) Project</a></li>
+              <li><a href="show.html">Future Farmers Programme</a></li>
+              <li><a href="show.html">Support for Community Kindergartens</a></li>
+              <li><a href="show.html">Self-Employment Training for Rural Youth</a></li>
+              <li><a href="show.html">Scavenging Youths to Scholars and Entrepreneurs (SY2SE)</a></li>
+              <li><a href="show.html">More...</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+    </div>
+  </div>
+ 
+  <footer class="footer">
+    <div class="container">
+      <div class="col-md-6">
+      <p class="text-muted">About YEI</p>
+        <small class="text-muted">The Youth Employment Inventory is the first comprehensive database to provide comparative information on youth employment interventions worldwide. Comprising more than 400 youth employment programs from around 90 countries, YEI documents program design, implementation, and achieved results.</small>
+      </div>
+      <div class="col-md-6">
+        <p class="text-muted">The YEI Consortium</p>
+        <ul class="list-unstyled">
+          <li><a href="http://www.ilo.org/global/lang--en/index.htm">International Labout Organization</a></li>
+          <li><a href="http://www.worldbank.org/">World Bank</a></li>
+          <li><a href="http://www.bmz.de/en/">German Federal Ministry for Economic Cooperation and Development</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script type="text/javascript">
+  var tour = {
+      id: "filter-tour",
+      steps: [
+        {
+          title: "Searching and filtering data",
+          content: "This page is for users to make a more precise search of the database. They should be able to search by keyword or filter by selection of characteristics. Select a filter to see the results.",
+          target: document.querySelector("div.header > h1"),
+          placement: "bottom"
+        },
+        {
+          title: "Graphics",
+          content: "These are just placeholder images. The results should display dynamically created graphics corresponding to the results. They would click on the graphic to see a larger version.",
+          target: document.querySelector("div.location > img"),
+          placement: "bottom"
+        },
+        {
+          title: "Adjust graphics",
+          content: "Users can select the type of graphic they wish to see.",
+          target: document.querySelector("div.more-options"),
+          placement: "bottom"
+        },
+        {
+          title: "List of results",
+          content: "The search would also generate a list of matching interventions.",
+          target: document.querySelector(".list-results"),
+          placement: "bottom"
+        },
+        {
+          title: "Add a project",
+          content: "Click here to see the next page",
+          target: document.querySelector("a[href='new.html']"),
+          placement: "bottom"
+        }
+      ]
+    };
+
+    hopscotch.startTour(tour);
+</script>
+
+<script type="text/javascript">
+
+  $(function(){
+    $("ul.dropdown-menu > li").on("click", function(e) {
+      e.preventDefault();
+      $(".results").removeClass("hidden");
+    })
+    $("input.search-input").on("change", function(e) {
+      e.preventDefault();
+      $(".results").removeClass("hidden");
+    })
+  })
+</script>
+</html>

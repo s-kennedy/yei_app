@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Youth Employment Inventory</title>
+  <script type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/masonry/dist/masonry.pkgd.min.js"></script>
+  <script type="text/javascript" src="/hopscotch/dist/js/hopscotch.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/hopscotch/dist/css/hopscotch.min.css">
+  <link rel="stylesheet" type="text/css" href="/index.css">
+</head>
+<body>
+  
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="/ILO_logo_white.png" alt="ILO" height="30px">
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Browse the interventions</a></li>
+          <li><a href="/filter">Explore the data</a></li>
+          <li><a href="/new">Add your project</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Log in</a></li>
+          <li class="register"><a href="#">Register</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="row main">
+    <div class="container">
+      
+      <div class="header col-md-12">
+        <h1>READY Youth Development Policy</h1>    
+      </div>
+
+      <div id="key-info">
+        <div class="standout col-md-12">
+          <div class="col-md-6">
+            <div class="standout-content">
+              <ul class="list-unstyled">
+                <li>
+                  <p><span>Country: </span>Nigeria</p>
+                </li>
+                <li>
+                  <p><span>Implementing organization: </span>CASDYA</p>
+                </li>
+                <li>
+                  <p><span>Main services: </span>Technical and vocational training</p>
+                </li>
+                <li>
+                  <p><span>Total beneficiaries: </span>2400</p>
+                </li>
+                <li>
+                  <p><span>Total cost: </span>1.2m USD</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="standout-content">
+              <ul class="list-unstyled">
+                <li>
+                  <p><span>Results:</span></p>
+                  <p>CASDYA reported that as of 2012, out of the 2000 youths enlisted in the first phase of the project, almost 60% gained decent employment and are fully engaged in self employment. The second phase was still ongoing and their target was to ensure that 80% of the 2400 total number of youths were gainfully employed.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="project-images">
+        <div class="images col-md-12">
+          <img src="../img/driver.jpg">
+        </div>
+      </div>
+      <div class="main col-md-12">
+        <article>
+          <h3>General description</h3>
+          <p>READY Youth Development Policy, or project READY, has the overall objective to reduce unemployment and strengthen the values in youth to ensure peace and security. More specifically, the programme objectives are to create jobs for youth; link young people to financial insitutions; re-orient troubled youth towards more positive values and refocus them towards a more productive lifestyle; train younth on job creation through the "work your own job" initiative; and ensure environmental sustainability and food security through its initiative. The project is implemented by Committed Advocates for Sustainable Development and Youth Advancement, (CASDYA) in Nigeria. 
+          </p>
+          <h3>Process</h3>
+          <p>The READY project recruits beneficiaries through a selective proecess then, provides job counseling as well as a number of services based on the beneficiary's needs. The services include skills training, mentoring, apprenticeships, business development, and financial support. The READY project also monitors the business environment and performance and can also evaluate the beneficiaries' projects within that context. READY project field officers pay regular montly visits to beneficiaries' business locations to render support services, business counseling and report back on progress to the main office. Most of the supporting financial institutions also pay visits to beneficiaries business locations to measure financial performance. In addition, most of the READY project staff are youth, such as 20 youth advocates executives who see to the planning and smooth execution of the project in the field. 
+          </p>
+        </article>
+      </div>
+      
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="col-md-6">
+      <p class="text-muted">About YEI</p>
+        <small class="text-muted">The Youth Employment Inventory is the first comprehensive database to provide comparative information on youth employment interventions worldwide. Comprising more than 400 youth employment programs from around 90 countries, YEI documents program design, implementation, and achieved results.</small>
+      </div>
+      <div class="col-md-6">
+        <p class="text-muted">The YEI Consortium</p>
+        <ul class="list-unstyled">
+          <li><a href="http://www.ilo.org/global/lang--en/index.htm">International Labout Organization</a></li>
+          <li><a href="http://www.worldbank.org/">World Bank</a></li>
+          <li><a href="http://www.bmz.de/en/">German Federal Ministry for Economic Cooperation and Development</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script type="text/javascript">
+  var tour = {
+      id: "show-tour",
+      steps: [
+        {
+          title: "Basic data of intervention",
+          content: "The basic information of the intervention is highlighted here",
+          target: document.querySelector(".standout"),
+          placement: "top",
+          xOffset: 500
+        },
+        {
+          title: "Detailed information",
+          content: "Here the full information is displayed for each intervention. We would include more sections for additional components, such as info on the implementing agency, the beneficiaries, evaluations, etc.",
+          target: document.querySelector("article"),
+          placement: "top"
+        },
+        {
+          title: "Explore the data",
+          content: "Click here to see the next page",
+          target: document.querySelector("a[href='filter.html']"),
+          placement: "bottom"
+        }
+      ]
+    };
+
+    hopscotch.startTour(tour);
+</script>
+
+<script>
+
+  $(function(){
+    $('.grid').masonry({
+      itemSelector: '.grid-item',
+      // columnWidth: 300
+    });
+  })
+
+  
+</script>
+</html>
