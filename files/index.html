@@ -239,7 +239,9 @@
 
   $(function(){
 
-    $('.grid').masonry({
+    var $grid = $('.grid');
+
+    $grid.masonry({
       itemSelector: '.grid-item',
       // columnWidth: 300
     });
@@ -248,19 +250,21 @@
       $grid.masonry('layout');
     });
 
+
+
     $("li#target").on("click", function() {
       var $items = $("div.grid-item:not(.driver)")
-      $('.grid').masonry("remove", $items).masonry('layout')
+      $grid.masonry("remove", $items).masonry('layout')
     })
 
     $("li#services").on("click", function() {
       var $items = $("div.grid-item:not(.driver, .itguy)")
-      $('.grid').masonry("remove", $items).masonry('layout')
+      $grid.masonry("remove", $items).masonry('layout')
     })
 
     $("li#country").on("click", function() {
       var $items = $("div.grid-item:not(.electrician, .itguy, .driver)")
-      $('.grid').masonry("remove", $items).masonry('layout')
+      $grid.masonry("remove", $items).masonry('layout')
     })
   })
 
