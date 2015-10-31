@@ -95,7 +95,7 @@ li.register, .nav-filter span.register {
 
 div.standout {
   border: 5px solid #0C3259;
-  margin-bottom: 30px; }
+  margin: 30px 0; }
   div.standout div.col-md-6 {
     padding: 0; }
     div.standout div.col-md-6 div.standout-content {
@@ -138,21 +138,22 @@ footer {
 div.results div {
   padding: 10px; }
   div.results div img {
-    max-width: 260px; }
+    max-width: 100%; }
 
 .hidden {
   display: none; }
 
 form div.basic-info .col-md-12, form div.basic-info .col-md-6, form div.basic-info .col-md-3 {
   margin-top: 20px; }
-form div.form-section {
-  background-color: #0C3259;
-  margin: 5px 0; }
-  form div.form-section h3 {
-    color: #fff;
-    margin-bottom: 20px; }
 form div.more-info {
   padding: 20px 0; }
+
+div.form-section {
+  background-color: #0C3259;
+  margin: 5px 0; }
+  div.form-section h3 {
+    color: #fff;
+    margin-bottom: 20px; }
 
 button.save {
   width: 300px;
