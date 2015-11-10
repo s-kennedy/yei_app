@@ -19,7 +19,8 @@ div.main {
   background-image: url("/chef.jpg");
   background-size: cover;
   height: 500px;
-  border-bottom: 5px solid #0C3259; }
+  border-bottom: 5px solid #0C3259;
+  margin-bottom: 0; }
   .jumbotron h1 {
     color: rgba(255, 255, 255, 0.8);
     font-size: 80px;
@@ -189,7 +190,7 @@ button.save {
   margin: 20px; }
 
 a.navbar-brand {
-  color: #61A037;
+  color: #61A037 !important;
   font-weight: 400; }
 
 /*# sourceMappingURL=index.css.map */

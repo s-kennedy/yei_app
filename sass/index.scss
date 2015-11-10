@@ -29,6 +29,7 @@ div.main {
   background-size: cover;
   height: 500px;
   border-bottom: 5px solid $dark_blue;
+  margin-bottom: 0;
 
   h1 {
     color: rgba(255,255,255,.8);
@@ -282,6 +283,6 @@ button.save {
 }
 
 a.navbar-brand {
-  color: $main_green;
+  color: $main_green !important;
   font-weight: 400;
 }
