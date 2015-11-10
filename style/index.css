@@ -188,4 +188,8 @@ button.save {
 .bs-example {
   margin: 20px; }
 
+a.navbar-brand {
+  color: #61A037;
+  font-weight: 400; }
+
 /*# sourceMappingURL=index.css.map */
