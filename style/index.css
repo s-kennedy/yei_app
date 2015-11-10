@@ -33,19 +33,19 @@ div.main {
     line-height: 2; }
 
 .jumbotron2 {
-  background-image: url("/locations.png");
+  background-image: url("/map.png");
   background-size: cover;
   height: 500px;
   border-bottom: 5px solid #0C3259; }
   .jumbotron2 h1 {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.8);
     font-size: 80px;
     text-transform: uppercase;
     font-family: 'Oswald', 'Helvetica', sans-serif;
     margin-bottom: 20px; }
   .jumbotron2 span {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
     padding: 5px;
     line-height: 2; }
 
@@ -177,14 +177,15 @@ button.save {
   margin: 30px auto;
   display: block; }
 
-.carousel{
-    background: #2f4357;
-    margin-top: 20px;
-}
-.carousel .item img{
-    margin: 0 auto; /* Align slide image horizontally center */
-}
-.bs-example{
-  margin: 20px;
-}
+.carousel {
+  background: #0C3259;
+  margin-top: 20px; }
 
+.carousel .item img {
+  margin: 0 auto;
+  /* Align slide image horizontally center */ }
+
+.bs-example {
+  margin: 20px; }
+
+/*# sourceMappingURL=index.css.map */

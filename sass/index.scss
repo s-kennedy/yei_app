@@ -46,6 +46,28 @@ div.main {
   }
 }
 
+.jumbotron2 {
+  background-image: url("/map.png");
+  background-size: cover;
+  height: 500px;
+  border-bottom: 5px solid $dark_blue;
+
+  h1 {
+    color: rgba(0,0,0,.8);
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: 'Oswald', 'Helvetica', sans-serif;
+    margin-bottom: 20px;
+  }
+
+  span {
+    background-color: rgba(0,0,0,.8);
+    color: #fff;
+    padding: 5px;
+    line-height: 2;
+  }
+}
+
 .nav-filter {
   background-color: #fff;
   width: 100%;
@@ -246,4 +268,15 @@ button.save {
   width: 300px;
   margin: 30px auto;
   display: block;
+}
+
+.carousel{
+    background: $dark_blue;
+    margin-top: 20px;
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.bs-example{
+  margin: 20px;
 }
